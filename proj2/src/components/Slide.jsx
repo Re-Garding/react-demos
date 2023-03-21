@@ -1,4 +1,5 @@
 import star from "../static/Star 1.png"
+
 export default function Slide(props) {
 let badgeText 
 if (props.openSpots === 0) {
