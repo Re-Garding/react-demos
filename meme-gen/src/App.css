@@ -1,22 +1,117 @@
 
 html, body {
-
-    height: 100%;
-    padding:0px;
-    margin:0px;
     display: flex;
+    min-height: 100vh;
     flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+}
+ main {
+    padding: 36px;
+    position: relative;
+ }
+
+
+ .form {
+    display: grid;
+    grid-template: 40px 40px / 1fr 1fr;
+    gap: 17px;
+
+ }
+
+ .inputForm {
+    font-family: "Karla", sans-serif;
+    border-radius: 5px;
+    text-indent: 5px;
+    
+ }
+
+ .form > button {
+    grid-column: 1/-1;
+    background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    font-family: "Karla", sans-serif;
+    border: 1px solid #D5D4D8;
+    cursor: pointer;
+ }
+
+
+.footer {
+    display:flex;
+    background-color: lightcoral;
+    padding: 10px;
+}
+
+.headList {
+    background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    text-align: center;
+    font-size: 20px;
+    margin: 0px;
+    align-items: center;
+    color:white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: 'Karla', sans-serif;
+}
+
+.memeGen {
+    font-size: 28px;
+    letter-spacing: -1px;
+}
+.headList > img {
+    height:50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.headList > li {
+    padding: 15px;   
+}
+
+.push {
+    margin-left: auto;
+    font-size: 16px;
+}
+
+main >img {
+    margin-top: 50px;
+    width:100%;
+    justify-items: center;
+    
+}
+
+.topText {
+
+    position: absolute;
+    top: 20%;
+    color: white;
+    width: 90%;
     text-align: center;
 
 }
 
-.wrapper {
-    flex: 1 0 auto;
-}
+.art {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 900;
+    color: #fff;
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke: 1.25px #000;
+    font-size: 60px;
+    }
+  
+    .bottomText {
 
-.footer, .header {
-    flex-shrink: 0;
-    background-color: lightcoral;
-    padding:10px;
-
-}
+        position: absolute;
+        bottom: 0px;
+        color: white;
+        width: 90%;
+        text-align: center;
+    
+    }
